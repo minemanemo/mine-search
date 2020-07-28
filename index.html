@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Search</title>
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            var book = getMineMap();
+            console.log(book);
+            const root = document.querySelector('#root');
+            book.forEach(line => {
+                const row = document.createElement('div');
+                row.style.display = 'flex';
+                row.style.width = '400px';
+                line.forEach(rec => {
+                    const div = document.createElement('div');
+                    div.style.backgroundColor = 'gray';
+                    div.style.color = rec === '*' ? 'red' : 'white';
+                    div.style.flex = 1;
+                    div.style.border = '1px solid black';
+                    div.style.textAlign = 'center';
+                    div.innerText = rec;
+                    row.append(div);
+                });
+                root.append(row);
+            });
+        });
+
+    </script>
+</body>
+
+</html>
