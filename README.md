@@ -12,7 +12,6 @@
    * Internet Explorer에서 열리지 않습니다.
 
 
-
 ## 설명 (index.js)
 
 **getMineMap (메인 로직 함수)**
@@ -32,3 +31,8 @@
 
 * 크기가 size x size 인 배열의 좌표 중 중복없이 
   랜덤하게 num개를 선택한 배열을 반환하는 함수
+
+
+## Screenshot
+
+![screenshot_20200729](https://user-images.githubusercontent.com/49668613/88755332-e5936680-d19b-11ea-9fee-633dd1976581.png)
