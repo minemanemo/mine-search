@@ -40,6 +40,7 @@ function getMineMap() {
         book[x][y] = '*';
 
         // 지뢰 주위의 숫자 1씩 증가
+        // check에 해당하는 8회 반복
         check.forEach(xy => {
             const newX = x + xy[0];
             const newY = y + xy[1];

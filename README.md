@@ -1,12 +1,19 @@
 # 지뢰찾기 (javascript)
 
-### 개요
+## 개요
 
 지뢰찾기 게임의 해답을 출력
 
+## Usage
+
+1. clone code
+2. open index.html
+   * index.html은 단순히 출력 결과를 간단하게 보여주는 코드입니다.
+   * Internet Explorer에서 열리지 않습니다.
 
 
-### 설명 (index.js)
+
+## 설명 (index.js)
 
 **getMineMap (메인 로직 함수)**
 
